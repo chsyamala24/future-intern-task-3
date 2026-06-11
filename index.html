@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitZone Gym</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<button class="toggle" onclick="toggleMode()">Dark Mode</button>
+
+<header>
+    <h1>FitZone Gym</h1>
+    <p>Transform Your Body, Transform Your Life</p>
+    <a href="#plans" class="btn">Join Now</a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#plans">Plans</a>
+    <a href="#bmi">BMI</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        FitZone Gym helps people achieve their fitness goals with modern equipment,
+        expert trainers, and personalized workout plans.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Personal Training</h3>
+            <p>One-on-one fitness coaching.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cardio Zone</h3>
+            <p>Latest cardio equipment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Nutrition Guidance</h3>
+            <p>Healthy diet planning.</p>
+        </div>
+    </div>
+</section>
+
+<section id="plans">
+    <h2>Membership Plans</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Basic</h3>
+            <p>₹999 / Month</p>
+        </div>
+
+        <div class="card">
+            <h3>Premium</h3>
+            <p>₹1999 / Month</p>
+        </div>
+
+        <div class="card">
+            <h3>Elite</h3>
+            <p>₹2999 / Month</p>
+        </div>
+    </div>
+</section>
+
+<section id="bmi">
+    <h2>BMI Calculator</h2>
+
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="height" placeholder="Height (cm)">
+
+    <button onclick="calculateBMI()">Calculate BMI</button>
+
+    <div id="result"></div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Email">
+    <textarea rows="4" placeholder="Message"></textarea>
+
+    <button onclick="submitForm()">Send Message</button>
+</section>
+
+<footer>
+    <p>© 2026 FitZone Gym | All Rights Reserved</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
